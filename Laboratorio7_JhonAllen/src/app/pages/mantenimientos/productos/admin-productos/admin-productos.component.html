@@ -1,0 +1,31 @@
+<h1 class="titulo">{{ titulo }}</h1>
+<form [formGroup]="productoForm.baseForm">
+  <mat-form-field>
+    <mat-label>Id</mat-label>
+    <input matInput formControlName="id" [readonly]="!isCreate" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="nombre" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Precio</mat-label>
+    <input type="number" matInput formControlName="precio" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Stock</mat-label>
+    <input type="number" matInput formControlName="stock" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Fecha Ingreso</mat-label>
+    <input type="date" matInput formControlName="fechaIngreso" />
+  </mat-form-field>
+</form>
+
+<div>
+  <button mat-button color="basic" (click)="guardar()">Guardar</button>
+</div>

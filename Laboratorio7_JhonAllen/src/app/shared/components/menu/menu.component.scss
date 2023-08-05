@@ -1,0 +1,22 @@
+*{
+  background-color: #ffffff;
+  text-align: center;
+}
+ul{
+  margin: 0px;
+}
+ul>li>a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 40px;
+  padding: 5px;
+  font-size: 140%;
+}
+
+ul>li{
+list-style: none;
+display: inline-block;
+padding: 10px 90px;
+}
+
+

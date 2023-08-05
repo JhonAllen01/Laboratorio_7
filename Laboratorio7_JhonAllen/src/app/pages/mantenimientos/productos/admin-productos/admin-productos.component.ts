@@ -44,20 +44,20 @@ export class AdminProductosComponent {
         this.srvProductos.guardar(this.productoForm.baseForm.value).subscribe(
           (dato) => {
             this.productoForm.baseForm.reset();
-            alert('Se guardo correctamente');
+            alert('El producto se ha guardado correctamente');
           },
           (error) => {
-            alert('Error al guardar');
+            alert('No se ha guardado correctamente el producto');
           }
         );
       } else {
         this.srvProductos.modificar(this.productoForm.baseForm.value).subscribe(
           (dato) => {
             this.productoForm.baseForm.reset();
-            alert('Se modifico correctamente');
+            alert('Se ha modificado correctamente');
           },
           (error) => {
-            alert('Error al modificar');
+            alert('No se ha podido modificar');
           }
         );
       }
